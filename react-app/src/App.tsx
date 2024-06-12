@@ -22,12 +22,22 @@ function App() {
           count is {count}
         </button>
         <p>
-          Hellllllooooooo Woorrrllldddd. This app is running on Google Cloud.
+          Hellllllooooooo Woorrrllldddd. This app is running on Google Cloud. I integrated a chatbot using Dialogflow CX
         </p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <df-messenger
+  location="us-central1"
+  project-id="calm-segment-426116-n5"
+  agent-id="47b2838f-46a3-433c-b826-f9cd2c8f7213"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+   chat-title="">
+  </df-messenger-chat-bubble>
+</df-messenger>
     </>
   )
 }
